@@ -79,6 +79,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "IWlanService",
+	owner: "razer",
+	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
 	name: "TimeService",
 	owner: "razer",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
@@ -104,6 +115,17 @@ android_app_import {
 	name: "QtiTelephonyService",
 	owner: "razer",
 	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "imssettings",
+	owner: "razer",
+	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
